@@ -1,0 +1,9 @@
+# Local deploy/debug artifacts
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+
+# Large local media assets should not go into a normal GitHub repo
+public/*.mov
+public/*.MOV
+public/*.mp4

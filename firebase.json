@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": "public",
+    "site": "studio-7027702551-d466e",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "firebase-debug.log",
+      "firebase-debug.*.log"
+    ],
+    "cleanUrls": true
+  }
+}

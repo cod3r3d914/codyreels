@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Update the page title here if you want to rename the site. -->
+  <title>CodyReels</title>
+  <meta
+    name="description"
+    content="CodyReels is a premium single-video viewing experience built for simple, focused playback."
+  >
+  <meta name="theme-color" content="#040507">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CodyReels">
+  <meta property="og:title" content="CodyReels">
+  <meta
+    property="og:description"
+    content="Watch the latest CodyReels video in a clean, cinematic single-video experience."
+  >
+  <!-- Update the live site URL here if your domain changes. Absolute URLs are required for reliable link previews. -->
+  <meta property="og:url" content="https://codyreels.com/">
+  <!-- Change the logo filename here if you replace ./logo.png. Use an absolute URL for social previews. -->
+  <meta property="og:image" content="https://codyreels.com/logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="CodyReels logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CodyReels">
+  <meta
+    name="twitter:description"
+    content="Watch the latest CodyReels video in a clean, cinematic single-video experience."
+  >
+  <meta name="twitter:image" content="https://codyreels.com/logo.png">
+  <link rel="canonical" href="https://codyreels.com/">
+  <link rel="icon" href="./logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="./logo.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="reel-feed" aria-label="CodyReels video feed">
+    <!--
+      Add, remove, or reorder full reel sections here to control the feed.
+      Update each MP4 filename below if you replace a video.
+      The site uses MP4 files for playback. If you replace an MP4 and a browser still shows an older video,
+      update the ?v= value on that reel URL to bust cache.
+    -->
+    <section class="reel-slide" aria-labelledby="reel-01-heading">
+      <div class="player-shell feature-card">
+        <div class="video-frame">
+          <div class="reel-title-wrap">
+            <p class="reel-kicker">CodyReels</p>
+            <h1 class="reel-title" id="reel-01-heading">Current Playbook</h1>
+          </div>
+
+          <video
+            class="reel-player"
+            data-reel-player
+            src="./video.mp4?v=3"
+            controls
+            preload="metadata"
+            playsinline
+          >
+            Your browser does not support video playback.
+          </video>
+
+          <!-- Change the logo filename here if you replace ./logo.png with a different file. -->
+          <div class="intro-overlay" data-intro-overlay>
+            <div class="overlay-stack">
+              <div class="overlay-logo-frame">
+                <img
+                  class="overlay-logo"
+                  src="./logo.png"
+                  alt=""
+                  width="1200"
+                  height="1200"
+                >
+              </div>
+              <button class="overlay-cta" type="button" data-intro-cta aria-label="Play CodyReels reel 01">
+                <span class="overlay-chip-icon" aria-hidden="true"></span>
+                <span class="overlay-chip-label">Press to play</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reel-slide" aria-labelledby="reel-02-heading">
+      <div class="player-shell feature-card">
+        <div class="video-frame">
+          <div class="reel-title-wrap">
+            <p class="reel-kicker">CodyReels</p>
+            <h2 class="reel-title" id="reel-02-heading">You&apos;re My Best Friend by Queen</h2>
+          </div>
+
+          <video
+            class="reel-player"
+            data-reel-player
+            src="./video-2.mp4?v=1"
+            controls
+            preload="metadata"
+            playsinline
+          >
+            Your browser does not support video playback.
+          </video>
+
+          <!-- Change the logo filename here if you replace ./logo.png with a different file. -->
+          <div class="intro-overlay" data-intro-overlay>
+            <div class="overlay-stack">
+              <div class="overlay-logo-frame">
+                <img
+                  class="overlay-logo"
+                  src="./logo.png"
+                  alt=""
+                  width="1200"
+                  height="1200"
+                >
+              </div>
+              <button class="overlay-cta" type="button" data-intro-cta aria-label="Play CodyReels reel 02">
+                <span class="overlay-chip-icon" aria-hidden="true"></span>
+                <span class="overlay-chip-label">Press to play</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./script.js" defer></script>
+</body>
+</html>
