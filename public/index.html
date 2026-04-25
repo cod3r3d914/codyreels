@@ -54,11 +54,20 @@
           <video
             class="reel-player"
             data-reel-player
-            src="./video.mp4?v=3"
             controls
             preload="metadata"
             playsinline
           >
+            <!--
+              GitHub Pages deploys the site shell from /public, but the large MP4 files live as GitHub Release assets.
+              Update the repository path below if you rename or move the GitHub repo.
+              Keep the local ./video.mp4 fallback so playback still works during local editing.
+            -->
+            <source
+              src="https://github.com/cod3r3d914/codyreels/releases/latest/download/video.mp4"
+              type="video/mp4"
+            >
+            <source src="./video.mp4?v=3" type="video/mp4">
             Your browser does not support video playback.
           </video>
 
@@ -95,11 +104,20 @@
           <video
             class="reel-player"
             data-reel-player
-            src="./video-2.mp4?v=1"
             controls
             preload="metadata"
             playsinline
           >
+            <!--
+              GitHub Pages deploys the site shell from /public, but the large MP4 files live as GitHub Release assets.
+              Update the repository path below if you rename or move the GitHub repo.
+              Keep the local ./video-2.mp4 fallback so playback still works during local editing.
+            -->
+            <source
+              src="https://github.com/cod3r3d914/codyreels/releases/latest/download/video-2.mp4"
+              type="video/mp4"
+            >
+            <source src="./video-2.mp4?v=1" type="video/mp4">
             Your browser does not support video playback.
           </video>
 
